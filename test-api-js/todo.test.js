@@ -19,6 +19,10 @@ describe('todo test suite', () => {
         expect(todo_service.get_todos().todo.length).toEqual(3);
     });
 
+    test("To check if the value is being added or not ", () => {
+        expect(todo_service.add_todo().todo.length).toEqual(4);
+    });
+
     
 
     // Write all your test cases here that corresponds to software requirements
