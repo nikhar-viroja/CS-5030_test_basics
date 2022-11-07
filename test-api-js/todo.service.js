@@ -39,7 +39,7 @@ class todoservice{
 
     delete_todo(todo){
         // Your code here
-        todo = this.todos.todo.slice(1)
+        todo = this.todos.todo.splice(1)
         console.log(todo)
         return this.todos
  

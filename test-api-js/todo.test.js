@@ -28,8 +28,18 @@ describe('todo test suite', () => {
             "description": "D1",
           "done": false,
           "id": 13,
-          "title":"T10"})
-          
+          "title":"T10"})  
+    })
+
+    test("It should delete the value as per the mentioned id and return the values deleted ", () =>{
+        expect(todo_service.delete_todo()).toEqual(
+            {"todo":
+             [{
+                "description": "D1",
+                 "done": false, 
+                 "id": 11,
+                  "title": "T1"
+                }]})
     })
 
     // Write all your test cases here that corresponds to software requirements
