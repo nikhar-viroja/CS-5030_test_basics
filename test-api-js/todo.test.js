@@ -23,7 +23,14 @@ describe('todo test suite', () => {
         expect(todo_service.add_todo().todo.length).toEqual(4);
     });
 
-    
+    test("It should update the title for id 13 from T1 to T10", ()=>{
+        expect(todo_service.update_todo()).toEqual({
+            "description": "D1",
+          "done": false,
+          "id": 13,
+          "title":"T10"})
+          
+    })
 
     // Write all your test cases here that corresponds to software requirements
 
